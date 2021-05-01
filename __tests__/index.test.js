@@ -19,4 +19,7 @@ describe('toUpperCase strings', () => {
   it('German chars üñïçødê --> ÜÑÏÇØDÊ', () => {
     expect(toUpperCase('üñïçødê')).toEqual('ÜÑÏÇØDÊ');
   });
+  it('Russian chars её --> ЕЁ', () => {
+    expect(toUpperCase('её')).toEqual('ЕЁ');
+  });
 });
